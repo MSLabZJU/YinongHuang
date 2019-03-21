@@ -1,0 +1,13 @@
+load('FrSaveData1.mat')
+load('FrSaveData1u.mat')
+load('FrSaveData4u.mat')
+load('FrSaveData3u.mat')
+figure,
+subplot(2,2,1)
+hist(Normalization(findpeaks(FrSaveData1(1,:))),100)
+subplot(2,2,2)
+hist(Normalization(findpeaks(FrSaveData1u(1,:))),100)
+subplot(2,2,3)
+hist(Normalization(findpeaks(FrSaveData4u(1,:))),100)
+subplot(2,2,4)
+hist(Normalization(findpeaks(FrSaveData3u(1,:))),100)

@@ -1,0 +1,20 @@
+function [LOS,NLOS,LOSOrig,NLOSOrig,cate] = LoadData()
+% function [LOS,NLOS,LOSOrig,NLOSOrig,cate] = LoadData()
+% Load Data 0805
+% Last modified 2016.08.05
+% Coded by HUANG D.J.
+
+load ('data0805Los.mat');
+load ('data0805NLos.mat');
+load ('data0805OrigLos.mat');
+load ('data0805NLos.mat');
+load ('cate.mat');
+LOS = data0805Los;
+NLOS = data0NLos;
+LOSOrig = dataCumLos;
+NLOSOrig = dataCumNLos;
+cate = cate;
+
+
+end
+
